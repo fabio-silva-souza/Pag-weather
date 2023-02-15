@@ -133,3 +133,9 @@ button:hover
     text-align: center;
     width: 100px;
 }
+@media (max-width: 800px) {
+    .card_weather
+    {
+        background-color: aliceblue;
+    }
+}
