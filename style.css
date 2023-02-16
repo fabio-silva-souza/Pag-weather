@@ -122,7 +122,6 @@ button:hover
     justify-content: space-around;
     font-size: 20px;
 }
-
 .icon
 {
    width: 90px;
@@ -133,9 +132,56 @@ button:hover
     text-align: center;
     width: 100px;
 }
-@media (max-width: 800px) {
+/* @media (max-width: 860px) {
+    .card
+    {
+        
+        left: auto;
+
+    }
     .card_weather
     {
-        background-color: aliceblue;
+        width: 60%;
+        padding: 20px;
+        border-radius: 20px;
+        flex-direction: column;
+        background-color: rgb(13, 126, 224);
+    }
+    .card_weather .temp
+    {
+        font-size: 5rem;
+    }
+    .card_weather .location
+    {
+        font-size: 2.5rem;
+    }
+} */
+
+@media (max-width: 400px) {
+    .card
+    {
+        max-height: 100vh;
+        text-align: center;
+        justify-content: flex-end;
+        background-color: #00000074;
+    }
+    .card::after
+    {
+        display: none;
+    }
+    .card_weather
+    {
+        padding: 20px;
+        bottom: 50%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card_weather .temp
+    {
+        font-size: 3rem;
+    }
+    .card_weather .location
+    {
+        font-size: 2rem;
     }
 }
